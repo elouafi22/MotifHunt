@@ -1,9 +1,7 @@
 # MotifHunt
 ![Nom de l'image](Untitled_logo_1_free-file.jpg)
 
-MotifHunt est un projet basé sur un algorithme conçu pour détecter des motifs ou des termes spécifiques dans des vidéos. L'objectif principal de ce projet est de fournir une solution efficace pour l'identification et la recherche de motifs clés au sein de contenus vidéo, facilitant ainsi l'analyse et l'extraction d'informations pertinentes.
-
-MotifHunt is a project based on an algorithm designed to detect specific patterns or terms in videos. The main goal of this project is to provide an efficient solution for the identification and search of key patterns within video content, thereby facilitating the analysis and extraction of relevant information.
+**MotifHunt** is a project based on an algorithm designed to detect specific patterns or terms in videos. The main goal of this project is to provide an efficient solution for the identification and search of key patterns within video content, thereby facilitating the analysis and extraction of relevant information.
 
 ## Features
 
