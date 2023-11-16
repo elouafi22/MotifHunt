@@ -11,4 +11,4 @@ class transcription:
     def execute(self):
         result = self.model.transcribe("/content/audio.mp3")
         result = self.model.transcribe("/content/audio.mp3")
-        print(result["text"])
+        return result["text"]
