@@ -8,7 +8,7 @@ app = flask.Flask(__name__)
 @app.route("/text", methods=["GET"])
 def get_text():
     objtranscripteur = transcription()
-    text = transcription.execute()
+    text = objtranscripteur.execute()
     return jsonify({"text": text})
 
 

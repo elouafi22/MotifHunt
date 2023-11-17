@@ -1,4 +1,5 @@
 import whisper
+import torch
 import os
 
 
@@ -7,7 +8,7 @@ class transcription:
 
     def __init__(
         self,
-        nomAudio="..\resource\audio.mp3",
+        nomAudio="audio.mp3",
         Namemodel="base",
     ):
         self.nomAudio = nomAudio
@@ -18,9 +19,12 @@ class transcription:
         self.model = whisper.load_model(Namemodel)
 
     def execute(self):
+        print(self.nomAudio)
         result = self.model.transcribe(self.nomAudio)
         return result["text"]
 
 
+"""
 obj = transcription()
-obj.execute()
+print(obj.execute())
+"""
