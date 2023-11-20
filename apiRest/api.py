@@ -11,7 +11,9 @@ def get_text():
     objtranscripteur = transcription()
     text = objtranscripteur.execute()
     su = summarizer(text)
-    return jsonify({"text": su.getSummary()})
+    texteresumer = su.getSummary()
+
+    return jsonify({"text": texteresumer})
 
 
 app.run(debug=True)
