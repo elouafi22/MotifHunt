@@ -4,7 +4,7 @@ const Nav = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <div className="d-flex align-items-center">
-                    <img src={image} alt="MotifHunts" style={{ maxWidth: '120%', maxHeight: '120px' }} />
+                    <a href='/'><img src={image} alt="MotifHunts" style={{ maxWidth: '120%', maxHeight: '120px' }} /></a>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

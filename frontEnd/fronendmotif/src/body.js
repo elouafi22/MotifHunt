@@ -1,9 +1,10 @@
 import React from 'react';
 import Typed from 'typed.js';
 
+
 const Card = (props) => {
     return (
-        <a href="#" className="btn btn-primary" style={{ marginLeft: '20px' }}>
+        <a href={props.path} className="btn btn-primary" style={{ marginLeft: '20px' }}>
             {props.valeur}
         </a>
     );
@@ -50,11 +51,13 @@ const Body = () => {
             <div style={{ marginBottom: '70px' }}>
                 <Animation />
             </div>
+
             <div>
-                <Card valeur="Summarize Youtube video" />
+                <Card valeur="Summarize Youtube video" path="/sumaraze" />
                 <Card valeur="Summarize uploaded video" />
             </div>
-        </div>
+
+        </div >
     )
 }
 
