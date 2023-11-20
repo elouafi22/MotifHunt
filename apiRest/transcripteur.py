@@ -24,5 +24,7 @@ class transcription:
         return result["text"]
 
 
+"""
 obj = transcription()
 print(obj.execute())
+"""

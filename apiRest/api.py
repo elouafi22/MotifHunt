@@ -1,6 +1,7 @@
 import flask
 from flask import jsonify
 from transcripteur import transcription
+from sumarizer import summarizer
 
 app = flask.Flask(__name__)
 
@@ -9,7 +10,8 @@ app = flask.Flask(__name__)
 def get_text():
     objtranscripteur = transcription()
     text = objtranscripteur.execute()
-    return jsonify({"text": text})
+    su = summarizer(text)
+    return jsonify({"text": su.getSummary()})
 
 
 app.run(debug=True)
