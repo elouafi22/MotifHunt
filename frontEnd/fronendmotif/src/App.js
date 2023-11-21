@@ -27,18 +27,16 @@ function Bug(props) {
 function App() {
   return (
     <AnimatePresence>
-      <div>
-        <Nav />
-        <m.div initial={{ y: "100%" }} animate={{ y: "0%" }} transition={{ duration: 0.75, ease: "easeOut" }}
-          exit={{ opacity: 1 }}
-        >
-          <Routes>
-            <Route path='/' element={<Body />} />
-            <Route path='/sumaraze' element={<Sumaraze />} />
-          </Routes>
-          <Footer />
-        </m.div>
-      </div>
+      <Nav />
+      <m.div initial={{ y: "100%" }} animate={{ y: "0%" }} transition={{ duration: 0.75, ease: "easeOut" }}
+        exit={{ opacity: 1 }}
+      >
+        <Routes>
+          <Route path='/' element={<Body />} />
+          <Route path='/sumaraze' element={<Sumaraze />} />
+        </Routes>
+        <Footer />
+      </m.div>
     </AnimatePresence >
   );
 }
